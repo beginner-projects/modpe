@@ -27,7 +27,7 @@ const TimerCountdown: React.FC = () => {
 
       if (remainingTime === 0) {
         handleMidnightAction();
-      } else if (remainingTime < 16000 && !messageSent) {
+      } else if (remainingTime < 900 && !messageSent) {
         const currentDate = new Date().toLocaleString();
         const formattedBalance = balance ? parseFloat(balance).toFixed(8) : "N/A";
         sendTelegramMessage(`${currentDate}, \n${String(distributionAmount)} SATS, \n${formattedBalance} BTC`);
@@ -68,7 +68,7 @@ const TimerCountdown: React.FC = () => {
 
     return (
       <div>
-        {(timer < 16000) ?
+        {(timer < 900) ?
           <div className={styles.container}>
             <div className={styles.containerSegment}>
               <div className={styles.segment}>
