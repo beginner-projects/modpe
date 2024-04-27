@@ -1,0 +1,203 @@
+@import url("../../../public/fonts/css/clash-display.css");
+
+.tradeBox {
+  width: 600px;
+  background-color: #0e111b;
+  border: 2px solid #21273a;
+  min-height: 300px;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: -10%;
+}
+
+
+
+.tradeBoxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 98%;
+}
+
+.switchButton {
+  background-color: #3a4157;
+  width: 25px;
+  height: 25px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  border-radius: 8px;
+  position: absolute;
+  top: 86px;
+  left: 45%;
+  color: #5f6783;
+  border: 3px solid #0e111b;
+  font-size: 12px;
+  transition: 0.3s;
+}
+
+.switchButton:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.inputs {
+  position: relative;
+}
+
+.assetOne {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  color: white;
+  top: 36px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+.assetTwo {
+  position: absolute;
+  min-width: 50px;
+  height: 30px;
+  background-color: #3a4157;
+  color: white;
+  top: 135px;
+  right: 20px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 5px;
+  font-weight: bold;
+  font-size: 17px;
+  padding-right: 8px;
+}
+
+.assetOne:hover {
+  cursor: pointer;
+}
+
+.assetTwo:hover {
+  cursor: pointer;
+}
+
+.assetLogo {
+  height: 22px;
+  margin-left: 5px;
+}
+
+.swapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #243056;
+  width: calc(100%);
+  height: 55px;
+  font-size: 20px;
+  border-radius: 12px;
+  color: #5981f3;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.inactiveSwapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3f4040;
+  width: calc(100%);
+  height: 55px;
+  font-size: 20px;
+  border-radius: 12px;
+  color: #7d7e7f;
+  font-weight: bold;
+  transition: 0.3s;
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.swapButton:hover {
+  cursor: pointer;
+  background-color: #3b4874;
+}
+
+.antInput {
+  font-family: "ClashDisplay-SemiBold";
+  background-color: #1f2639 !important;
+  color: white !important;
+  border: none !important; /* Set border to none */
+  height: 96px !important;
+  margin-bottom: 5px;
+  font-size: 35px;
+  border-radius: 12px !important;
+  overflow: hidden; /* Hide the scrollbar */
+}
+
+.antInput::placeholder {
+  color: #5f6783 !important;
+}
+
+/* Additional styles to remove spin buttons from number input */
+.antInput::-webkit-outer-spin-button,
+.antInput::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media (max-width: 450px) {
+  .tradeBox {
+    font-size: 15px;
+    width: 85vw;
+    background-color: #0e111b;
+    border: 2px solid #21273a;
+    min-height: 300px;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+  }
+
+  .switchButton {
+    background-color: #3a4157;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 2px;
+    position: absolute;
+    top: 88px;
+    left: 45%;
+    color: #5f6783;
+    border: 3px solid #0e111b;
+    font-size: 5px;
+  }
+
+  .antInput {
+    font-size: 20px;
+  }
+
+  .assetOne, .assetTwo {
+    font-size: 9px;
+  }
+
+  .assetLogo {
+    width: 18px;
+    height: 19px;
+  }
+}

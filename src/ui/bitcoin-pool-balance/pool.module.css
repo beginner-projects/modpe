@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  gap: 0.5em;
+  justify-content: start;
+  margin-left: 210px;
+  font-size: 6em;
+}
+
+.containerSegment {
+  display: flex;
+  flex-direction: column;
+  gap: .1em;
+  align-items: center;
+}
+
+.segment {
+  display: flex;
+  gap: .1em;
+}
+
+.segmentTitle {
+  font-size: 1rem;
+}
+
+.smallDecimal {
+  font-size: 0.5em;
+}
+
+.dot {
+  font-size: 0.4em;
+}
+
+
+@media (max-width: 450px) {
+  .container {
+    font-size: 2em;
+    color: orange;
+    margin-left: 6%;
+    letter-spacing: 4px;
+  }
+
+  .smallDecimal {
+    font-size: 0.8em;
+    letter-spacing: 5px;
+  }
+  
+  .dot {
+    font-size: 0.8em;
+    margin-right: 8px;
+  }
+}

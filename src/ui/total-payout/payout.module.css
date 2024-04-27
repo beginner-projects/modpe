@@ -1,0 +1,16 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    font-weight: 400;
+    margin-top: 50px;
+  }
+  
+  @media (max-width: 450px) {
+    .container {
+      color: white;
+      margin-left: -190px;
+      font-size: 2em;
+      letter-spacing: 2px;
+    }
+  }

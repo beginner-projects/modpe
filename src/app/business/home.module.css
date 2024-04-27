@@ -1,0 +1,18 @@
+.iconContainer {
+    margin-top: 30px;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Combine the transitions */
+}
+
+.iconContainer:hover {
+    transform: scale(1.6); /* Apply a single transform with the desired scale value */
+}
+
+.cartIconDisplay {
+    margin-left: 70px;
+}
+
+.gameIconDisplay {
+    margin-left: 98px;
+}

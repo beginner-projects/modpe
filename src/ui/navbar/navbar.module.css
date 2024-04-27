@@ -1,0 +1,23 @@
+.divider
+{
+	position: relative;
+	margin-top: 20px;
+	height: 1px;
+}
+
+.divTransparent:before
+{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 5%;
+	right: 5%;
+	width: 90%;
+	height: 1px;
+	background-image: linear-gradient(to right, transparent, rgb(240, 242, 245), transparent);
+}
+
+.mobileNav {
+	display: flex;
+	flex-direction: column;
+}
